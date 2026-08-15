@@ -1,0 +1,39 @@
+# WHRadjBMI adipose genomics project — analysis parameters
+# All thresholds, windows, and paths live here so no analytical
+# decision is hard-coded inside a script.
+gwas:
+  source_url: "https://zenodo.org/records/1251813/files/whradjbmi.giant-ukbb.meta-analysis.combined.23May2018.txt.gz"
+  local_path: "data/raw/whradjbmi_giant_ukbb_combined.txt.gz"
+  genome_build: "hg19"
+  pval_threshold: 5.0e-8
+  n_top_loci: 8
+  locus_window_kb: 500          # +/- window for greedy distance-based pruning
+
+eqtl:
+  dataset_id: "QTD000116"       # GTEx v8 adipose subcutaneous, gene expression
+  study_id: "QTS000015"
+  ftp_base: "https://ftp.ebi.ac.uk/pub/databases/spot/eQTL/sumstats"
+  genome_build: "GRCh38"
+  cis_window_kb: 500
+  sample_size: 581
+liftover:
+  chain_url: "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz"
+  local_path: "data/raw/hg19ToHg38.over.chain.gz"
+
+coloc:
+  n_loci: 3
+  # default coloc.abf priors (Giambartolomei et al. 2014 defaults)
+  p1: 1.0e-4
+  p2: 1.0e-4
+  p12: 1.0e-5
+single_cell:
+  accession: "GSE129363"
+  matrix_dir: "data/raw/GSE129363"
+  min_genes_per_cell: 200
+  min_cells_per_gene: 3
+  max_mito_pct: 20
+seed: 20260815
+figures:
+  dpi: 300
+  width_in: 7
+  height_in: 5

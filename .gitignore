@@ -1,0 +1,11 @@
+data/raw/
+data/interim/
+*.gz
+*.tbi
+.Rhistory
+.RData
+.Rproj.user/
+renv/library/
+renv/staging/
+Rplots.pdf
+.DS_Store
