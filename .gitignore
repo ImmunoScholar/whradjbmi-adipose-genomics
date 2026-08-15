@@ -9,3 +9,4 @@ renv/library/
 renv/staging/
 Rplots.pdf
 .DS_Store
+results/logs/*.log
