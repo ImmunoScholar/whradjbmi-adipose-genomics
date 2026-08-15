@@ -1,0 +1,23 @@
+=== Cluster identity diagnosis ===
+Run timestamp: 2026-08-15 19:04:11 UTC
+Saved top-10 marker genes per cluster: results/tables/06b_cluster_top_markers.csv
+Top 10 marker genes for cluster 0 (currently mislabeled Endothelial via weak argmax):
+MSLN, TFPI2, KRT19, ITLN1, HP, KRT8, KRT18, SLPI, TM4SF1, OGN
+Top 10 marker genes for cluster 5 (currently mislabeled Endothelial via weak argmax):
+KRT18, KRT8, CLDN1, ITLN1, HAS1, KRT19, UPK3B, TM4SF1, ALDH1A3, KLK11
+Top 10 marker genes for cluster 8 (the confident Endothelial cluster, score=0.631, for comparison):
+VWF, APOLD1, RBP7, SPARCL1, GNG11, FABP4, A2M, IFI27, CD36, BST2
+Checking mesothelial markers (MSLN, WT1, UPK3B, KRT19) by cluster:
+   cluster        MSLN         WT1       UPK3B        KRT19
+1        0 1.109994445 0.118687845 0.634793481 1.0949805907
+2        1 0.000000000 0.000000000 0.000000000 0.0006468516
+3        2 0.005686850 0.001788415 0.002795278 0.0039754139
+4        3 0.010234129 0.025735249 0.002914494 0.0159049385
+5        4 0.001403062 0.001328331 0.000000000 0.0000000000
+6        5 1.607940592 0.191945977 1.079103057 1.7716511509
+7        6 0.013022467 0.018460644 0.004322963 0.0024225423
+8        7 0.023334157 0.001588882 0.014224281 0.0260461022
+9        8 0.012902653 0.004106914 0.007751585 0.0046922672
+10       9 0.000000000 0.000000000 0.000000000 0.0000000000
+11      10 0.000000000 0.000000000 0.000000000 0.0000000000
+12      11 0.053673552 0.000000000 0.000000000 0.0000000000

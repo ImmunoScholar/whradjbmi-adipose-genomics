@@ -1,0 +1,50 @@
+=== Single-cell data inspection: GSE129363 ===
+Run timestamp: 2026-08-15 18:44:06 UTC
+Files found in data/raw/GSE129363:
+  GSE129363_Discovery_Cohort_barcodes.tsv.gz (0.172 MB)
+  GSE129363_Discovery_Cohort_CellAnnotation.txt.gz (0.14 MB)
+  GSE129363_Discovery_Cohort_genes.tsv.gz (0.265 MB)
+  GSE129363_Discovery_Cohort_matrix.mtx.gz (38.5 MB)
+Raw matrix dimensions (as stored): 33694 x 38170
+Barcodes file: 38170 rows, 1 columns
+Genes file: 33694 rows, 2 columns
+Genes file first 3 rows:
+                V1           V2
+            <char>       <char>
+1: ENSG00000243485 RP11-34P13.3
+2: ENSG00000237613      FAM138A
+3: ENSG00000186092        OR4F5
+Matrix orientation check: genes_x_cells (standard 10x convention)
+Annotation file dimensions: 26350 rows, 4 columns
+Annotation column names: CellID, SampleName, Condition, Tissue
+Annotation file first 5 rows:
+               CellID SampleName Condition Tissue
+               <char>     <char>    <char> <char>
+1: AAACCTGAGCCATCGC-1   SVF2-SAT  Diabetic    SAT
+2: AAACCTGAGGACCACA-1   SVF2-SAT  Diabetic    SAT
+3: AAACCTGAGGGAGTAA-1   SVF2-SAT  Diabetic    SAT
+4: AAACCTGCAGAGCCAA-1   SVF2-SAT  Diabetic    SAT
+5: AAACCTGCATCACAAC-1   SVF2-SAT  Diabetic    SAT
+Column 'CellID' has 26350 unique values (too many to print, likely an ID column) -- first 5: AAACCTGAGCCATCGC-1, AAACCTGAGGACCACA-1, AAACCTGAGGGAGTAA-1, AAACCTGCAGAGCCAA-1, AAACCTGCATCACAAC-1
+Column 'SampleName' (25 unique values):
+vals
+Ate-04-SAT Ate-04-VAT Ate-05-SAT Ate-05-VAT Ate-06-SAT Ate-06-VAT Ate-08-SAT 
+       411       2289        174       2243        664        250        473 
+Ate-08-VAT Ate-09-SAT Ate-09-VAT Ate-10_VAT Ate-10-SAT Ate-11-SAT Ate-11-VAT 
+       849        663       1467        765        210        382       1462 
+Ate-12-SAT Ate-12-VAT Ate-13-SAT Ate-13-VAT Ate-14-SAT Ate-14-VAT Ate-15-SAT 
+      2148        373        861        550        228        958        662 
+Ate-15-VAT   SVF2-SAT   SVF3-VAT   SVF5-SAT 
+       363       5846       1330        729 
+Column 'Condition' (2 unique values):
+vals
+   Diabetic NonDiabetic 
+      11979       14371 
+Column 'Tissue' (2 unique values):
+vals
+  SAT   VAT 
+13451 12899 
+Annotation columns with nonzero overlap against matrix barcodes:
+   column n_overlap pct_of_matrix
+   <char>     <int>         <num>
+1: CellID     26350            69

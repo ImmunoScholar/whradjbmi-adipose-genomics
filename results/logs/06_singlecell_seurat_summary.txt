@@ -1,0 +1,63 @@
+=== Single-cell processing: Seurat pipeline (v2, post Checkpoint 9 fix) ===
+Run timestamp: 2026-08-15 19:09:00 UTC
+Raw matrix loaded: 33694 genes x 38170 cells
+Subset to annotated cells: 26350 of 38170 (confirmed via Vijay et al. 2020 Methods as the authors' own QC exclusions)
+Seurat object created: 26350 cells x 17914 genes
+Tissue distribution:    SAT   VAT  13451 12899 
+Condition distribution:     Diabetic NonDiabetic        11979       14371 
+QC filter: 26348 of 26350 cells retained
+Saved QC violin plot: results/figures/03_singlecell_qc.png
+Clustering complete: 12 clusters identified
+
+   0    1    2    3    4    5    6    7    8    9   10   11 
+4462 3783 3594 3148 2442 2238 2100 1729 1539 1077  176   60 
+Marker genes actually present in the dataset:
+  Progenitor: PDGFRA, DCN, LUM
+  Immune: PTPRC
+  Endothelial: PECAM1, VWF
+  Mesothelial: MSLN, UPK3B, KRT19
+Mean module score per cluster:
+   Progenitor Immune Endothelial Mesothelial
+0      -0.404 -0.107      -0.045       0.375
+1       1.805 -0.110      -0.044      -0.563
+2      -0.438  0.126      -0.005      -0.618
+3       1.661 -0.133      -0.047      -0.572
+4      -0.508  0.475      -0.034      -0.479
+5      -0.587 -0.200      -0.084       0.717
+6       1.711 -0.165      -0.053      -0.563
+7      -0.274  0.207       0.008      -0.511
+8      -0.102 -0.122       0.631      -0.538
+9      -0.512  0.512      -0.048      -0.460
+10     -0.464  0.177      -0.034      -0.466
+11     -0.537  0.282      -0.071      -0.561
+Cluster -> broad cell type assignment (score floor = 0.1):
+  Cluster 0 -> Mesothelial (max score = 0.375)
+  Cluster 1 -> Progenitor (max score = 1.805)
+  Cluster 2 -> Immune (max score = 0.126)
+  Cluster 3 -> Progenitor (max score = 1.661)
+  Cluster 4 -> Immune (max score = 0.475)
+  Cluster 5 -> Mesothelial (max score = 0.717)
+  Cluster 6 -> Progenitor (max score = 1.711)
+  Cluster 7 -> Immune (max score = 0.207)
+  Cluster 8 -> Endothelial (max score = 0.631)
+  Cluster 9 -> Immune (max score = 0.512)
+  Cluster 10 -> Immune (max score = 0.177)
+  Cluster 11 -> Immune (max score = 0.282)
+Final cell-type distribution:
+
+Endothelial      Immune Mesothelial  Progenitor 
+       1539        9078        6700        9031 
+Final cell-type distribution (%):
+
+Endothelial      Immune Mesothelial  Progenitor 
+        5.8        34.5        25.4        34.3 
+Cell-type x Tissue cross-tab (checking the paper's depot-specificity claim for mesothelial cells):
+             
+               SAT  VAT
+  Endothelial 1049  490
+  Immune      6832 2246
+  Mesothelial    3 6697
+  Progenitor  5566 3465
+Saved UMAP plot: results/figures/04_singlecell_umap.png
+Saved depot-colored UMAP: results/figures/04b_singlecell_umap_by_depot.png
+Saved annotated Seurat object: data/processed/seurat_annotated.rds

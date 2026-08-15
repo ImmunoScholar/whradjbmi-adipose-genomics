@@ -1,0 +1,5 @@
+locus_id,gene,role,PP4,PP3
+locus_02,VEGFA,Locus namesake / nearest gene,0.0278988466456457,0.216572300212987
+locus_02,PEX6,Best coloc-supported gene at locus,0.251599905621859,0.129914045484115
+locus_03,NCOR2,Locus namesake / nearest gene,0.0466254236139588,0.356072047019545
+locus_03,ZNF664,Best coloc-supported gene at locus,0.918239130495877,0.0216054170887079

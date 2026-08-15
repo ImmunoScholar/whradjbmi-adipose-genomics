@@ -1,0 +1,9 @@
+locus_id,SNP,CHR,POS,P,BETA,gene_symbol,nsnps,PP4,top_cell_type,fold_enrichment,tier
+locus_01,rs72959041:G:A,6,127454893,2.08e-293,0.1624,RSPO3,2073,0.767948109967203,Progenitor,6.09,Tier 1: Strong
+locus_02,rs998584:C:A,6,43757896,1.22e-170,0.0487,PEX6,1635,0.251599905621859,Mesothelial,6.9,Tier 2: Suggestive
+locus_03,rs863750:C:T,12,124505444,4.17e-101,0.0373,ZNF664,2952,0.918239130495877,Mesothelial,2.34,Tier 1: Strong
+locus_04,rs2371767:G:C,3,64718258,1e-100,-0.0402,,,,,,GWAS-only (not coloc-tested)
+locus_05,rs2791550:T:G,1,219655369,3.35e-93,-0.037,,,,,,GWAS-only (not coloc-tested)
+locus_06,rs10923724:C:T,1,119546842,1.25e-89,0.0347,,,,,,GWAS-only (not coloc-tested)
+locus_07,rs114760566:C:A,6,34192036,9.027e-82,0.0932,,,,,,GWAS-only (not coloc-tested)
+locus_08,rs10195252:T:C,2,165513091,8.432e-78,0.0324,,,,,,GWAS-only (not coloc-tested)

@@ -1,0 +1,17 @@
+=== Locus selection ===
+Run timestamp: 2026-08-15 16:59:16 UTC
+Input rows: 27,375,636
+Dropped rows missing CHR/POS/N: 706 (confirmed at QC: min P among these = 1.573e-05, none genome-wide significant)
+Rows remaining: 27,374,930
+Variants at P < 5e-08: 54,362
+Locus 1: lead rs72959041:G:A (chr6:127454893, P=2.08e-293) -- 53734 significant variants remain after exclusion
+Locus 2: lead rs998584:C:A (chr6:43757896, P=1.22e-170) -- 53576 significant variants remain after exclusion
+Locus 3: lead rs863750:C:T (chr12:124505444, P=4.17e-101) -- 52759 significant variants remain after exclusion
+Locus 4: lead rs2371767:G:C (chr3:64718258, P=1e-100) -- 52433 significant variants remain after exclusion
+Locus 5: lead rs2791550:T:G (chr1:219655369, P=3.35e-93) -- 51999 significant variants remain after exclusion
+Locus 6: lead rs10923724:C:T (chr1:119546842, P=1.25e-89) -- 51255 significant variants remain after exclusion
+Locus 7: lead rs114760566:C:A (chr6:34192036, P=9.03e-82) -- 50931 significant variants remain after exclusion
+Locus 8: lead rs10195252:T:C (chr2:165513091, P=8.43e-78) -- 50552 significant variants remain after exclusion
+Independent loci selected: 8 (target was 8)
+Saved lead-locus table: results/tables/02_lead_loci.csv
+Saved Manhattan plot: results/figures/01_manhattan.png

@@ -1,0 +1,49 @@
+=== Final integrated prioritization ===
+Run timestamp: 2026-08-15 19:22:04 UTC
+Best coloc gene per tested locus:
+   locus_id         gene_id nsnps       PP4
+     <char>          <char> <int>     <num>
+1: locus_01 ENSG00000146374  2073 0.7679481
+2: locus_02 ENSG00000124587  1635 0.2515999
+3: locus_03 ENSG00000179195  2952 0.9182391
+Tier assignment (PP4 > 0.5 & fold > 2x = Tier 1; PP4 0.2-0.5 = Tier 2; PP4 < 0.2 = Tier 3):
+Key: <gene_symbol>
+   locus_id gene_symbol       PP4 top_cell_type fold_enrichment
+     <char>      <char>     <num>        <char>           <num>
+1: locus_02        PEX6 0.2515999   Mesothelial            6.90
+2: locus_01       RSPO3 0.7679481    Progenitor            6.09
+3: locus_03      ZNF664 0.9182391   Mesothelial            2.34
+                 tier
+               <char>
+1: Tier 2: Suggestive
+2:     Tier 1: Strong
+3:     Tier 1: Strong
+Saved final prioritization table (8 loci): results/tables/08_final_prioritization.csv
+Key: <locus_id>
+   locus_id             SNP   CHR       POS          P    BETA gene_symbol
+     <char>          <char> <int>     <int>      <num>   <num>      <char>
+1: locus_01  rs72959041:G:A     6 127454893 2.080e-293  0.1624       RSPO3
+2: locus_02    rs998584:C:A     6  43757896 1.220e-170  0.0487        PEX6
+3: locus_03    rs863750:C:T    12 124505444 4.170e-101  0.0373      ZNF664
+4: locus_04   rs2371767:G:C     3  64718258 1.000e-100 -0.0402        <NA>
+5: locus_05   rs2791550:T:G     1 219655369  3.350e-93 -0.0370        <NA>
+6: locus_06  rs10923724:C:T     1 119546842  1.250e-89  0.0347        <NA>
+7: locus_07 rs114760566:C:A     6  34192036  9.027e-82  0.0932        <NA>
+8: locus_08  rs10195252:T:C     2 165513091  8.432e-78  0.0324        <NA>
+   nsnps       PP4 top_cell_type fold_enrichment                         tier
+   <int>     <num>        <char>           <num>                       <char>
+1:  2073 0.7679481    Progenitor            6.09               Tier 1: Strong
+2:  1635 0.2515999   Mesothelial            6.90           Tier 2: Suggestive
+3:  2952 0.9182391   Mesothelial            2.34               Tier 1: Strong
+4:    NA        NA          <NA>              NA GWAS-only (not coloc-tested)
+5:    NA        NA          <NA>              NA GWAS-only (not coloc-tested)
+6:    NA        NA          <NA>              NA GWAS-only (not coloc-tested)
+7:    NA        NA          <NA>              NA GWAS-only (not coloc-tested)
+8:    NA        NA          <NA>              NA GWAS-only (not coloc-tested)
+Saved nearest-gene vs coloc-gene contrast table: results/tables/08_nearest_vs_coloc_contrast.csv
+   locus_id   gene                               role        PP4        PP3
+     <char> <char>                             <char>      <num>      <num>
+1: locus_02  VEGFA      Locus namesake / nearest gene 0.02789885 0.21657230
+2: locus_02   PEX6 Best coloc-supported gene at locus 0.25159991 0.12991405
+3: locus_03  NCOR2      Locus namesake / nearest gene 0.04662542 0.35607205
+4: locus_03 ZNF664 Best coloc-supported gene at locus 0.91823913 0.02160542

@@ -1,0 +1,25 @@
+=== eQTL retrieval (liftOver + Rsamtools tabix) ===
+Run timestamp: 2026-08-15 17:35:12 UTC
+Loci to process: 8
+locus_01: hg19 chr6:126954893-127954893 (2 fragments) -> hg38 chr6:126633747-127633748 (100% width retained)
+locus_02: hg19 chr6:43257896-44257896 (2 fragments) -> hg38 chr6:43290158-44290159 (100% width retained)
+locus_03: hg19 chr12:124005444-125005444 (2 fragments) -> hg38 chr12:123520897-124520898 (100% width retained)
+locus_04: hg19 chr3:64218258-65218258 (2 fragments) -> hg38 chr3:64232582-65232583 (100% width retained)
+locus_05: hg19 chr1:219155369-220155369 (1 fragments) -> hg38 chr1:218982027-219982027 (100% width retained)
+locus_06: hg19 chr1:119046842-120046842 (1 fragments) -> hg38 chr1:118504219-119504219 (100% width retained)
+locus_07: hg19 chr6:33692036-34692036 (1 fragments) -> hg38 chr6:33724259-34724259 (100% width retained)
+locus_08: hg19 chr2:165013091-166013091 (1 fragments) -> hg38 chr2:164156581-165156581 (100% width retained)
+Saved liftOver diagnostics: results/tables/03_liftover_diagnostics.csv
+All loci lifted cleanly (>=90% width retained, single target chromosome).
+eQTL file header verified: matches expected 19-column schema.
+locus_01: 24681 variant-gene association rows retrieved, 16 unique genes
+locus_02: 159410 variant-gene association rows retrieved, 57 unique genes
+locus_03: 142136 variant-gene association rows retrieved, 51 unique genes
+locus_04: 58471 variant-gene association rows retrieved, 19 unique genes
+locus_05: 51250 variant-gene association rows retrieved, 23 unique genes
+locus_06: 53335 variant-gene association rows retrieved, 18 unique genes
+locus_07: 175868 variant-gene association rows retrieved, 73 unique genes
+locus_08: 24311 variant-gene association rows retrieved, 12 unique genes
+Total eQTL association rows across all loci: 689,462
+Loci with zero returned variants: 0 of 8
+Saved raw eQTL associations: data/interim/03_eqtl_raw.csv

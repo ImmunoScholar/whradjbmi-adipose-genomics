@@ -10,3 +10,4 @@ renv/staging/
 Rplots.pdf
 .DS_Store
 results/logs/*.log
+data/processed/

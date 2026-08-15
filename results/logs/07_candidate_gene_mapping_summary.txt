@@ -1,0 +1,31 @@
+Saved expression summary table: results/tables/07_candidate_gene_expression_summary.csv
+      gene   cell_type   mean_expr pct_expressing n_cells
+    <char>      <char>       <num>          <num>   <int>
+ 1:  NCOR2 Mesothelial 0.047679858     1.98507463    6700
+ 2:  NCOR2  Progenitor 0.039273800     1.37304839    9031
+ 3:  NCOR2 Endothelial 0.038916853     1.42949968    1539
+ 4:  NCOR2      Immune 0.036659825     1.44304913    9078
+ 5:   PEX6 Mesothelial 0.025158075     1.08955224    6700
+ 6:   PEX6  Progenitor 0.006128876     0.23253239    9031
+ 7:   PEX6      Immune 0.004671353     0.17625028    9078
+ 8:   PEX6 Endothelial 0.001749757     0.06497726    1539
+ 9:  RSPO3  Progenitor 0.043965075     1.48377810    9031
+10:  RSPO3 Mesothelial 0.009685931     0.44776119    6700
+11:  RSPO3 Endothelial 0.005833966     0.19493177    1539
+12:  RSPO3      Immune 0.002192955     0.08812514    9078
+13:  VEGFA Mesothelial 0.088506765     3.89552239    6700
+14:  VEGFA Endothelial 0.052517728     1.94931774    1539
+15:  VEGFA      Immune 0.043120432     1.60828376    9078
+16:  VEGFA  Progenitor 0.041095356     1.45055919    9031
+17: ZNF664 Mesothelial 0.052447238     2.26865672    6700
+18: ZNF664 Endothelial 0.040531596     1.49447693    1539
+19: ZNF664  Progenitor 0.024275707     0.83047282    9031
+20: ZNF664      Immune 0.014158984     0.58382904    9078
+      gene   cell_type   mean_expr pct_expressing n_cells
+    <char>      <char>       <num>          <num>   <int>
+Dropout / concentration check per gene (top cell type only):
+  RSPO3 in Progenitor: 134 of 9031 cells express it (1.5%) -- adequate cell count
+  ZNF664 in Mesothelial: 152 of 6700 cells express it (2.3%) -- adequate cell count
+  PEX6 in Mesothelial: 73 of 6700 cells express it (1.1%) -- adequate cell count
+  VEGFA in Mesothelial: 261 of 6700 cells express it (3.9%) -- adequate cell count
+  NCOR2 in Mesothelial: 133 of 6700 cells express it (2%) -- adequate cell count
