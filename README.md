@@ -17,16 +17,20 @@ type.
 Two loci show strong colocalization evidence between the GWAS and adipose
 eQTL signal: **RSPO3** (PP4=0.77, enriched in adipose progenitor cells) and
 **ZNF664** (PP4=0.92, enriched in a visceral-specific mesothelial-derived
-population). At both of these loci's neighbors, the "obvious" nearest gene
-(VEGFA, NCOR2) did **not** colocalize — direct evidence that proximity to a
-GWAS hit is not the same as regulatory relevance.
+population). At both loci, the GWAS and eQTL signal peaks visibly align at
+the same genomic position (dashed line = lead GWAS variant):
+
+<p align="center">
+  <img src="results/figures/02_coloc_locus01_rspo3.png" width="480" alt="RSPO3 locus-zoom: GWAS and adipose eQTL signal aligned by position">
+  <img src="results/figures/02_coloc_best_locus_diagnostic.png" width="480" alt="ZNF664 locus-zoom: GWAS and adipose eQTL signal aligned by position">
+</p>
+
+At both of these loci's neighbors, the "obvious" nearest gene (VEGFA, NCOR2)
+did **not** colocalize — direct evidence that proximity to a GWAS hit is not
+the same as regulatory relevance.
 
 <p align="center">
   <img src="results/figures/01_manhattan.png" width="600" alt="WHRadjBMI GWAS Manhattan plot with 8 lead loci highlighted">
-</p>
-
-<p align="center">
-  <img src="results/figures/06_integrated_evidence.png" width="500" alt="Integrated colocalization and cell-type evidence for prioritized genes">
 </p>
 
 ## Research question
@@ -159,6 +163,7 @@ Rscript scripts/06b_cluster_diagnosis.R
 Rscript scripts/07_candidate_gene_mapping.R
 Rscript scripts/08_final_prioritization.R
 Rscript scripts/09_integrated_figure.R
+Rscript scripts/10_locus_zoom_figure.R
 ```
 
 ## Results
@@ -177,8 +182,11 @@ Colocalization was performed at the 3 most significant loci:
 | locus_02 | rs998584 (chr6) | 1.22x10^-170 | PEX6 | 0.252 | Tier 2: Suggestive | Mesothelial (6.9x) |
 | locus_03 | rs863750 (chr12) | 4.17x10^-101 | **ZNF664** | 0.918 | Tier 1: Strong | Mesothelial (2.3x) |
 
+See the locus-zoom plots above for RSPO3 and ZNF664. A summary view across
+all tested genes and the winning genes' cell-type expression:
+
 <p align="center">
-  <img src="results/figures/02_coloc_best_locus_diagnostic.png" width="450" alt="Colocalization diagnostic plot for the strongest locus-gene pair">
+  <img src="results/figures/06_integrated_evidence.png" width="480" alt="Integrated colocalization and cell-type evidence for prioritized genes">
 </p>
 
 At locus_02 and locus_03, the physically nearest/eponymous gene did **not**
